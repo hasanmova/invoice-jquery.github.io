@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	
+	<title>فاکتور ساز باران وب</title>
+	
+	<link rel='stylesheet' type='text/css' href='css/style.css' />
+	<link rel='stylesheet' type='text/css' href='css/print.css' media="print" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://unpkg.com/persian-datepicker@latest/dist/css/persian-datepicker.min.css"/>
+  <script src="https://unpkg.com/persian-date@latest/dist/persian-date.min.js"></script>
+
+  <script src="https://unpkg.com/persian-datepicker@latest/dist/js/persian-datepicker.min.js"></script>
+
+  <script type='text/javascript' src='js/example.js'></script>
+
+</head>
+
+<body>
+
+	<div id="page-wrap">
+
+		<textarea id="header">طراحان وب باران</textarea>
+		
+		<div id="identity">
+
+				 
+		    <div  id="address" >
+					<textarea id="customer-titleone">فاکتور طراحان وب باران
+                    </textarea>
+					<textarea id="destwo">آدرس : همدان - تویسرکان - خیابان شهید باهنر - کوچه صادقیه - جنب بانک انصار
+شماره تماس : 09120324460
+				   </textarea>
+			</div>
+            
+
+            <div id="logo">
+
+              <div id="logoctr">
+                <a href="javascript:;" id="change-logo" title="Change logo">تغییر لوگو</a>
+                <a href="javascript:;" id="save-logo" title="Save changes">ذخیره</a>
+                |
+                <a href="javascript:;" id="delete-logo" title="Delete logo">حذف</a>
+                <a href="javascript:;" id="cancel-logo" title="Cancel changes">کنسل</a>
+              </div>
+
+              <div id="logohelp">
+                <input id="imageloc" type="text" size="50" value="" /><br />
+                (max width: 540px, max height: 100px)
+              </div>
+              <img id="image" src="images/logo.png" alt="logo" />
+            </div>
+		
+		</div>
+		
+		<div style="clear:both"></div>
+		
+		<div id="customer">
+   
+
+			<table style="float: right;">
+					<tr>
+							<td>  
+									<textarea id="customer-title">خریدار : حسن موحد 
+								   </textarea>
+								 </td>
+								  
+					</tr>
+					<tr>
+							<td>  
+									<textarea id="customer-des">ادرس : ................ شماره تماس : ......................
+								   </textarea>
+								 </td>
+								  
+					</tr>
+			</table>
+          
+
+            <table id="meta">
+                <tr>
+                    <td class="meta-head">شماره #</td>
+                    <td><textarea>100</textarea></td>
+                </tr>
+                <tr>
+                    <td class="meta-head">تاریخ</td>
+                    <td><input name="date" id="date"></td>
+                </tr>
+                
+
+            </table>
+		
+		</div>
+		
+		<table id="items">
+		
+				
+
+		  <tr>
+			  <th>ردیف</th>
+			  <th style="width: 50%;" >نام کالا</th>
+
+		    
+			  
+
+		      <th>قیمت واحد</th>
+		      <th style="width: 10%;">تعداد</th>
+		      <th>قیمت کل</th>
+		  </tr>
+		  
+		  <tr class="item-row">
+			  <td  >1<div class="delete-wpr"><a class="delete" href="javascript:;" title="Remove row">X</a></div></td>
+			  <td class="item-name"><textarea>نام کالا</textarea></td>
+			  
+			  
+			  
+
+		      <td><textarea class="cost">0</textarea></td>
+		      <td><textarea class="qty">1</textarea></td>
+		      <td><span class="price">0</span></td>
+		  </tr>
+		  
+		 
+		  
+		  <tr id="hiderow">
+		    <td colspan="5"><a id="addrow" href="javascript:;" title="Add a row">افزودن سطر جدید</a></td>
+		  </tr>
+		  
+		  <tr>
+				
+			  <td colspan="3" rowspan="2" ><textarea id="desamount">توضیحات</textarea></td>	  
+
+			  <td colspan="1" class="total-line">ارزش افزوده</td>
+		      <td class="total-value"><span>%</span><textarea id="arzesh">0</textarea></td>
+
+		      <!--<td colspan="2" class="total-line">جمع کل</td>
+		      <td class="total-value"><div id="subtotal">0</div></td>-->
+		  </tr>
+		  <tr>
+				
+			 
+              <td colspan="1" class="total-line">جمع</td>
+		      <td class="total-value"><div id="total">0</div></td> 
+		  </tr>
+		  <tr>
+				<td rowspan="2" colspan="3" class="blank">
+						<textarea id="desamount">شماره حساب : ...</textarea>
+				  </td>
+		      <td colspan="1" class="total-line">تخفیف</td>
+
+		      <td class="total-value"><textarea id="paid">0</textarea></td>
+		  </tr>
+		  <tr>
+		       
+		      <td colspan="1" class="total-line balance">مبلغ پرداختی</td>
+		      <td class="total-value balance"><div class="due">0</div> ریال</td>
+		  </tr>
+		
+		</table>
+
+		<br>
+		<br>
+		
+		<!--<div id="terms">
+		  <h5>قوانین</h5>
+		  <textarea></textarea>
+		</div>-->
+	
+	</div>
+	
+</body>
+
+</html>
