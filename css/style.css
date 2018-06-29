@@ -91,5 +91,20 @@ textarea:hover, textarea:focus, #items td.total-value textarea:hover, #items td.
     position: relative;
 }
 
+.emza{
+	font-family: Vazir;
+	font-weight: bold ; 
+	font-size: 18px ;
+}
+.allemza{
+	padding: 20px;
+	clear: both
+}
+.lf {
+	float: left;
+} .ri{
+  float: right;
+}
+
 .delete-wpr { position: relative; }
 .delete { display: block; color: #000; text-decoration: none; position: absolute; background: #EEEEEE; font-weight: bold; padding: 0px 3px; border: 1px solid; top: -6px; right: -23px; font-family: Vazir; font-size: 14px; }
