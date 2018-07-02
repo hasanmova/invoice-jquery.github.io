@@ -1,3 +1,8 @@
+@page {
+  size: 21cm 29.7cm;
+  margin: 10mm 10mm 10mm 10mm; /* change the margins as you want them to be. */
+}
+
 #hiderow,
 .delete {
   display: none;
